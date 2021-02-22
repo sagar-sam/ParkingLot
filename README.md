@@ -41,8 +41,11 @@ This is handled by ``getSlotNumbersforGivenDriverAge`` function present in the `
 
 Time complexity of this operation: ``O(Number of Vehicles Parked By the Given Driver Age)``
 
-## Requirements
-1. Make sure you have java installed.
+## Optimisations
+1. The current time complexity of operation ``getSlotNumberForVehicleNumber`` is O(N). This can be optimized by adding an another map from vehicle number to slot number in ``ParkingLot.java`` but this will also increase our space used further. We should definitely optimize here in case we have sufficient space available on our host.
+
+## System Requirements
+1. Make sure you have java installed. ([Ref](https://www.baeldung.com/java-check-is-installed))
 
 ## Compiling the project
 1. Make sure you are in the project folder. e.g. if your project name is ``ParkingLot``, you should be in ``ParkingLot`` directory
